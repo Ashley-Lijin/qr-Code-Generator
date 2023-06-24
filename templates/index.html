@@ -79,8 +79,19 @@
           }
         </style>
 
-        <div class="qr">
-          <img src="{{data}}" alt="" />
+        <div
+          class="qr"
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 4em;
+            gap: 2em;
+          "
+        >
+          <img src="{{qrcode}}" alt="" height="250" draggable="false" />
+          <p>Here is the Qr-Code</p>
         </div>
       </div>
     </main>
