@@ -4,17 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qr-code-Qenerator</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    * {
+      color-scheme: dark light;
+    }
+  </style>
   <body>
-    <div>
-      <h2>Qr-Code Generator</h2>
-    </div>
-    <div>
-      <form action="/" method="post">
-        <label for="link">Enter The URL</label>
-        <input type="text" name="link" />
-        <button type="submit">Generate Qr</button>
-      </form>
-    </div>
+    <main
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5em;
+      "
+    >
+      <div style="font-size: 1.3em">
+        <h2>Qr-Code Generator</h2>
+      </div>
+      <div style="padding-top: 2.4em">
+        <form action="/" method="post">
+          <label for="link">Enter The Url</label>
+          <input
+            type="text"
+            name="link"
+            style="height: 2.4em"
+            placeholder="i.e: www.yourname.com"
+          />
+          <button style="height: 2.4em" type="submit">Generate Qr</button>
+        </form>
+
+        <style>
+          form {
+            display: flex;
+            flex-direction: column;
+            width: 90dvw;
+            gap: 1em;
+          }
+          @media screen and (min-width: 413px) {
+            form {
+              width: 80dvw;
+            }
+          }
+
+          @media screen and (min-width: 1024px) {
+            form {
+              width: 45em;
+            }
+          }
+
+          input {
+            padding: 1.3em;
+          }
+
+          button {
+            color: white;
+            font: bold;
+            font-size: 1em;
+            background-color: #4f46e5;
+            text-decoration: none;
+            border: none;
+            transition: 300ms ease-in-out;
+          }
+
+          button:hover {
+            background-color: #5b21b6;
+          }
+        </style>
+      </div>
+    </main>
   </body>
 </html>
